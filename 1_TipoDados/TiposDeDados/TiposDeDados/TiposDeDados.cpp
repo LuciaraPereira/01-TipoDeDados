@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	cout << "Estrutura de Dados - Fatec" << endl;
+	cout << "Estrutura de Dados - Fatec" << endl; 
 
 	
 	cout << "Tipos Numericos\n";
@@ -18,7 +18,7 @@ int main()
 	float f = 1.97F;
 	double  d = 4.73;
 	cout << "Inteiros\n";
-	cout << "  int i = " << i << " ocupa " << sizeof(i) << " bytes\n";
+	cout << "  int i = " << i << " ocupa " << sizeof(i) << " bytes\n"; //sizeof() quanto ocupa na memoria
 	cout << "short s = " << s << " ocupa " << sizeof(s) << " bytes\n";
 	cout << "long  l = " << l << " ocupa " << sizeof(l) << " bytes\n\n";
 	cout << "Ponto Flutuante (Reais)\n";
@@ -59,6 +59,7 @@ int main()
 	int dias = 0;
 	int horas = 0;
 	int minutos = 0;
+	int segundos = 0;
 
 	cout << "Digite seu nome: ";
 	cin >> nome;
@@ -67,9 +68,12 @@ int main()
 	dias = idade * 365;
 	horas = dias * 24;
 	minutos = horas  * 60;
+	segundos = minutos * 60;
 	cout << "Sua idade em dias e: " << dias << endl;
 	cout << "Sua idade em horas e: " << horas << endl;
 	cout << "Sua idade em minutos e: " << minutos << endl;
+	cout << "Sua idade em segundos e:" << segundos << endl;
+
 
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
